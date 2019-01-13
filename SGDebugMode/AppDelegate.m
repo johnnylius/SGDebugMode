@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  SGDebugMode
 //
-//  Created by Johnny on 2019/1/12.
-//  Copyright © 2019年 johnny. All rights reserved.
+//  Created by liuhuan on 2019/1/12.
+//  Copyright © 2019年 Sogou. All rights reserved.
 //
 
 #import "AppDelegate.h"

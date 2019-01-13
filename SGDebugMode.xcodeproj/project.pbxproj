@@ -13,6 +13,11 @@
 		B26E99CE21E907E900CDD5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26E99CD21E907E900CDD5FA /* Assets.xcassets */; };
 		B26E99D121E907E900CDD5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26E99CF21E907E900CDD5FA /* LaunchScreen.storyboard */; };
 		B26E99D421E907E900CDD5FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99D321E907E900CDD5FA /* main.m */; };
+		B26E99E821E9087100CDD5FA /* SGDebugModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99DD21E9087000CDD5FA /* SGDebugModeViewController.m */; };
+		B26E99E921E9087100CDD5FA /* SGDebugTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99DF21E9087000CDD5FA /* SGDebugTextViewController.m */; };
+		B26E99EA21E9087100CDD5FA /* SGDebugModeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99E221E9087000CDD5FA /* SGDebugModeManager.m */; };
+		B26E99EB21E9087100CDD5FA /* SGDebugCustomEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99E521E9087000CDD5FA /* SGDebugCustomEditView.m */; };
+		B26E99EC21E9087100CDD5FA /* SGDebugModeSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B26E99E721E9087000CDD5FA /* SGDebugModeSwitchCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		B26E99D021E907E900CDD5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B26E99D221E907E900CDD5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26E99D321E907E900CDD5FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B26E99DC21E9087000CDD5FA /* SGDebugModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDebugModeViewController.h; sourceTree = "<group>"; };
+		B26E99DD21E9087000CDD5FA /* SGDebugModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDebugModeViewController.m; sourceTree = "<group>"; };
+		B26E99DE21E9087000CDD5FA /* SGDebugTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDebugTextViewController.h; sourceTree = "<group>"; };
+		B26E99DF21E9087000CDD5FA /* SGDebugTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDebugTextViewController.m; sourceTree = "<group>"; };
+		B26E99E121E9087000CDD5FA /* SGDebugModeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDebugModeManager.h; sourceTree = "<group>"; };
+		B26E99E221E9087000CDD5FA /* SGDebugModeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDebugModeManager.m; sourceTree = "<group>"; };
+		B26E99E421E9087000CDD5FA /* SGDebugCustomEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDebugCustomEditView.h; sourceTree = "<group>"; };
+		B26E99E521E9087000CDD5FA /* SGDebugCustomEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDebugCustomEditView.m; sourceTree = "<group>"; };
+		B26E99E621E9087000CDD5FA /* SGDebugModeSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDebugModeSwitchCell.h; sourceTree = "<group>"; };
+		B26E99E721E9087000CDD5FA /* SGDebugModeSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDebugModeSwitchCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 		B26E99C321E907E900CDD5FA /* SGDebugMode */ = {
 			isa = PBXGroup;
 			children = (
+				B26E99DA21E9087000CDD5FA /* DebugMode */,
 				B26E99C421E907E900CDD5FA /* AppDelegate.h */,
 				B26E99C521E907E900CDD5FA /* AppDelegate.m */,
 				B26E99C721E907E900CDD5FA /* ViewController.h */,
@@ -69,6 +85,47 @@
 				B26E99D321E907E900CDD5FA /* main.m */,
 			);
 			path = SGDebugMode;
+			sourceTree = "<group>";
+		};
+		B26E99DA21E9087000CDD5FA /* DebugMode */ = {
+			isa = PBXGroup;
+			children = (
+				B26E99E021E9087000CDD5FA /* Manager */,
+				B26E99DB21E9087000CDD5FA /* Controllers */,
+				B26E99E321E9087000CDD5FA /* Views */,
+			);
+			path = DebugMode;
+			sourceTree = SOURCE_ROOT;
+		};
+		B26E99DB21E9087000CDD5FA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B26E99DC21E9087000CDD5FA /* SGDebugModeViewController.h */,
+				B26E99DD21E9087000CDD5FA /* SGDebugModeViewController.m */,
+				B26E99DE21E9087000CDD5FA /* SGDebugTextViewController.h */,
+				B26E99DF21E9087000CDD5FA /* SGDebugTextViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B26E99E021E9087000CDD5FA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B26E99E121E9087000CDD5FA /* SGDebugModeManager.h */,
+				B26E99E221E9087000CDD5FA /* SGDebugModeManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B26E99E321E9087000CDD5FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B26E99E421E9087000CDD5FA /* SGDebugCustomEditView.h */,
+				B26E99E521E9087000CDD5FA /* SGDebugCustomEditView.m */,
+				B26E99E621E9087000CDD5FA /* SGDebugModeSwitchCell.h */,
+				B26E99E721E9087000CDD5FA /* SGDebugModeSwitchCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26E99EC21E9087100CDD5FA /* SGDebugModeSwitchCell.m in Sources */,
+				B26E99E921E9087100CDD5FA /* SGDebugTextViewController.m in Sources */,
 				B26E99C921E907E900CDD5FA /* ViewController.m in Sources */,
+				B26E99EA21E9087100CDD5FA /* SGDebugModeManager.m in Sources */,
+				B26E99EB21E9087100CDD5FA /* SGDebugCustomEditView.m in Sources */,
+				B26E99E821E9087100CDD5FA /* SGDebugModeViewController.m in Sources */,
 				B26E99D421E907E900CDD5FA /* main.m in Sources */,
 				B26E99C621E907E900CDD5FA /* AppDelegate.m in Sources */,
 			);
@@ -281,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SGDebugMode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnny.SGDebugMode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.SGDebugMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -294,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SGDebugMode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnny.SGDebugMode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.SGDebugMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
