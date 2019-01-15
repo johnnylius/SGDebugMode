@@ -117,11 +117,11 @@
     if (indexPath.section == 0) {
         NSString *text = @"";
         if (indexPath.row == 0) {
-            text = [DebugModeManager deviceInfoText];
+            text = DebugModeManager.deviceInfoText();
         } else if (indexPath.row == 1) {
-            text = [DebugModeManager appInfoText];
+            text = DebugModeManager.appInfoText();
         } else if (indexPath.row == 2) {
-            text = [DebugModeManager userInfoText];
+            text = DebugModeManager.userInfoText();
         }
         NSString *title = self.dataSource[indexPath.section][indexPath.row];
         SGDebugTextViewController *controller = [[SGDebugTextViewController alloc] initWithText:text];

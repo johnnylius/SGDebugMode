@@ -19,11 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIe-0d-s0A">
-                                <rect key="frame" x="133" y="318" width="108" height="30"/>
+                                <rect key="frame" x="134" y="272" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="打开调试模式"/>
                                 <connections>
                                     <action selector="enableDebugMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DGt-J3-qWW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-6I-ENQ">
+                                <rect key="frame" x="134" y="319" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="关闭调试模式"/>
+                                <connections>
+                                    <action selector="disableDebugMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eac-XP-ZpE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0Y-6P-4e8">
+                                <rect key="frame" x="134" y="366" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="得到调试配置"/>
+                                <connections>
+                                    <action selector="debugModeConfig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqb-Xc-HiC"/>
                                 </connections>
                             </button>
                         </subviews>
