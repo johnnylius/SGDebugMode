@@ -57,7 +57,8 @@
 		B26E99B821E907E900CDD5FA = {
 			isa = PBXGroup;
 			children = (
-				B26E99C321E907E900CDD5FA /* SGDebugMode */,
+				B26E99C321E907E900CDD5FA /* SGDebugModeDemo */,
+				B26E99DA21E9087000CDD5FA /* SGDebugMode */,
 				B26E99C221E907E900CDD5FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,10 +71,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B26E99C321E907E900CDD5FA /* SGDebugMode */ = {
+		B26E99C321E907E900CDD5FA /* SGDebugModeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B26E99DA21E9087000CDD5FA /* DebugMode */,
 				B26E99C421E907E900CDD5FA /* AppDelegate.h */,
 				B26E99C521E907E900CDD5FA /* AppDelegate.m */,
 				B26E99C721E907E900CDD5FA /* ViewController.h */,
@@ -84,17 +84,17 @@
 				B26E99D221E907E900CDD5FA /* Info.plist */,
 				B26E99D321E907E900CDD5FA /* main.m */,
 			);
-			path = SGDebugMode;
+			path = SGDebugModeDemo;
 			sourceTree = "<group>";
 		};
-		B26E99DA21E9087000CDD5FA /* DebugMode */ = {
+		B26E99DA21E9087000CDD5FA /* SGDebugMode */ = {
 			isa = PBXGroup;
 			children = (
-				B26E99E021E9087000CDD5FA /* Manager */,
 				B26E99DB21E9087000CDD5FA /* Controllers */,
+				B26E99E021E9087000CDD5FA /* Manager */,
 				B26E99E321E9087000CDD5FA /* Views */,
 			);
-			path = DebugMode;
+			path = SGDebugMode;
 			sourceTree = SOURCE_ROOT;
 		};
 		B26E99DB21E9087000CDD5FA /* Controllers */ = {
@@ -341,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SGDebugMode/Info.plist;
+				INFOPLIST_FILE = SGDebugModeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.SGDebugMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SGDebugMode/Info.plist;
+				INFOPLIST_FILE = SGDebugModeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.SGDebugMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

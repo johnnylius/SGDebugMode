@@ -11,7 +11,6 @@
 #import "SGDebugModeSwitchCell.h"
 #import "SGDebugCustomEditView.h"
 #import "SGDebugTextViewController.h"
-#import "AppDelegate.h"
 
 @interface SGDebugModeViewController () <UITableViewDataSource, UITableViewDelegate>
 
