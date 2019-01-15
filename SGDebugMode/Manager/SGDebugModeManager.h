@@ -96,6 +96,9 @@ extern SGDebugModeGroup const SGDebugModeGroupConfig; // 功能配置项
 @interface SGDebugModeManager : NSObject
 
 @property (nonatomic, copy) NSString *deviceToken;
+@property (nonatomic, copy) NSString *(^deviceInfoText)(void);
+@property (nonatomic, copy) NSString *(^appInfoText)(void);
+@property (nonatomic, copy) NSString *(^userInfoText)(void);
 
 + (instancetype)sharedInstance;
 - (BOOL)isEnableDebugMode;
@@ -105,8 +108,5 @@ extern SGDebugModeGroup const SGDebugModeGroupConfig; // 功能配置项
 - (NSDictionary *)allConfigWithGroup:(NSString *)group;
 - (NSObject *)configWithTitle:(NSString *)title defaultConfig:(NSString *)defaultConfig;
 - (BOOL)isConfigModifiedWithTitle:(NSString *)title;
-- (NSString *)deviceInfoText;
-- (NSString *)appInfoText;
-- (NSString *)userInfoText;
 
 @end

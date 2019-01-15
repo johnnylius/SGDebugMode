@@ -24,6 +24,23 @@ SGDebugModeGroup const SGDebugModeGroupConfig = @"功能配置项";
 @implementation SGDebugModeManager
 
 #pragma mark - Life Cycle
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.deviceInfoText =
+        _deviceInfoText = ^NSString *(void) {
+            return @"";
+        };
+        _appInfoText = ^NSString *(void) {
+            return @"";
+        };
+        _userInfoText = ^NSString *(void) {
+            return @"";
+        };
+    }
+    return self;
+}
+
 
 #pragma mark - Public Method
 + (instancetype)sharedInstance {
@@ -122,72 +139,6 @@ SGDebugModeGroup const SGDebugModeGroupConfig = @"功能配置项";
     NSObject *config = [[NSUserDefaults standardUserDefaults] objectForKey:title];
     BOOL modified = (config.description.length != 0);
     return modified;
-}
-
-- (NSString *)deviceInfoText {
-    NSString *text = @"";
-    /*
-    RNAppContext *context = [RNAppContext sharedInstance];
-    NSString *text = [NSString stringWithFormat:@"deviceName: \n%@\n\n"\
-                      @"deviceModel: \n%@\n\n"\
-                      @"systemName: \n%@\n\n"\
-                      @"systemVersion: \n%@\n\n"\
-                      @"machineModel: \n%@\n\n"\
-                      @"resolution: \n%@",
-                      context.deviceName,
-                      context.deviceModel,
-                      context.systemName,
-                      context.systemVersion,
-                      context.machineModel,
-                      context.sr];
-     */
-    return text;
-}
-
-- (NSString *)appInfoText {
-    NSString *text = @"";
-    /*
-    RNAppContext *context = [RNAppContext sharedInstance];
-    NSString *text = [NSString stringWithFormat:@"pkg: \n%@\n\n"\
-                      @"v: \n%@\n\n"\
-                      @"h: \n%@\n\n"\
-                      @"omid: \n%@\n\n"\
-                      @"idfa: \n%@\n\n"\
-                      @"pushToken: \n%@\n\n"\
-                      @"appleID: \n%@",
-                      context.bundleID,
-                      context.bundleVersion,
-                      context.udid,
-                      context.omid,
-                      context.adid,
-                      self.deviceToken,
-                      kAppleID];
-     */
-    return text;
-}
-
-- (NSString *)userInfoText {
-    NSString *text = @"";
-    /*
-    RNUserInfo *userInfo = [RNLoginManager sharedInstance].userInfo;
-    NSString *text = [NSString stringWithFormat:@"ppid: \n%@\n\n"\
-                      @"userid: \n%@\n\n"\
-                      @"unionid: \n%@\n\n"\
-                      @"userName: \n%@\n\n"\
-                      @"telephone: \n%@\n\n"\
-                      @"age: \n%@\n\n"\
-                      @"avatar: \n%@\n\n"\
-                      @"inviteCode: \n%@",
-                      userInfo.ppid,
-                      userInfo.userId,
-                      userInfo.unionid,
-                      userInfo.userName,
-                      userInfo.telephone,
-                      userInfo.age,
-                      userInfo.avatar,
-                      userInfo.inviteCode];
-     */
-    return text;
 }
 
 #pragma mark - Private Method
